@@ -34,10 +34,10 @@ showRouter.use('/getfiles', (req,res)=>{
             console.log(err);
         }else{
             var Pool = mysql.createPool({
-                'host': 'us-cdbr-iron-east-01.cleardb.net',
-                'user': 'beb0ce369366d7',
-                'password': 'ff3e14a6',
-                'database': 'heroku_326ec9a75511f55'
+                'host': 'host_url',
+                'user': 'user_id',
+                'password': 'your_passoword',
+                'database': 'database_name'
             });
 
             Pool.getConnection((err, c)=>{
@@ -67,10 +67,10 @@ showRouter.use('/getfiles', (req,res)=>{
 showRouter.use('/login', (req,res)=>{
     //console.log(req.query);
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -109,10 +109,10 @@ showRouter.use('/login', (req,res)=>{
 showRouter.use('/goto_group', (req,res)=>{
     //console.log(req.query);
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -152,10 +152,10 @@ showRouter.use('/goto_group', (req,res)=>{
 showRouter.use('/create', (req,res)=>{
     //console.log(req.query);
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -220,10 +220,10 @@ showRouter.use('/create', (req,res)=>{
 showRouter.use('/file_search', (req, res)=>{
 
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -255,10 +255,10 @@ showRouter.use('/file_search', (req, res)=>{
 showRouter.use('/showFiles', (req, res)=>{
 
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -291,10 +291,10 @@ showRouter.use('/addDownload', (req, res)=>{
     console.log(req.query.hash);
 
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -346,10 +346,10 @@ showRouter.use('/addDownload', (req, res)=>{
     console.log(req.query.hash);
 
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -448,10 +448,10 @@ loginRouter.use('/getfiles', (req,res)=>{
 loginRouter.use('/res', (req,res)=>{
     //console.log(req.query);
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
@@ -521,11 +521,12 @@ loginRouter.use('/removeFile', (req, res)=>{
             console.log(err);
             res.send({'ok':0, 'msg': 'failed'});
         }else{
+            
             var Pool = mysql.createPool({
-                'host': 'us-cdbr-iron-east-01.cleardb.net',
-                'user': 'beb0ce369366d7',
-                'password': 'ff3e14a6',
-                'database': 'heroku_326ec9a75511f55'
+                'host': 'host_url',
+                'user': 'user_name',
+                'password': 'your_password',
+                'database': 'database_name'
             });
 
             Pool.getConnection((err, c)=>{
@@ -565,10 +566,10 @@ loginRouter.use('/removeFile', (req, res)=>{
 loginRouter.use('/login', (req,res)=>{
     //console.log(req.query);
     var Pool = mysql.createPool({
-        'host': 'us-cdbr-iron-east-01.cleardb.net',
-        'user': 'beb0ce369366d7',
-        'password': 'ff3e14a6',
-        'database': 'heroku_326ec9a75511f55'
+        'host': 'host_url',
+        'user': 'user_name',
+        'password': 'your_password',
+        'database': 'database_name'
     });
 
     Pool.getConnection((err, c)=>{
